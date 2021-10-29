@@ -12,6 +12,7 @@
     <link href="css/animate.min.css" rel="stylesheet" />
     <link href="css/aos.css" rel="stylesheet" />
     <!-- main style -->
+    <link href="css/fonts.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,7 +22,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body dir="rtl">
     <!-- Preloader -->
     <div id="preloader">
       <div id="status">
@@ -40,8 +41,8 @@
       <nav>
         <ul>
           <li><a href="#about"> درباره من</a></li>
-          <li><a href="#about">رزرو وقت</a></li>
-          <li><a href="#experience">تجربیات</a></li>
+          <li><a href="#experience">رزرو وقت</a></li>
+          <!-- <li><a href="#experience">تجربیات</a></li> -->
           <li><a href="#projects">نمونه کار</a></li>
           <li><a href="#contact">تماس با من</a></li>
         </ul>
@@ -56,8 +57,10 @@
           <div class="table-cell" data-aos="fade-up" data-aos-delay="0">
             <h4>زیبا کاسبی</h4>
             <h1>
-              عکاس &<br />
-              طراح
+              <span class="photo">عکاس</span>
+              <!-- <span class="sign">&</span> -->
+              <br />
+              <span class="designer">طراح</span>
             </h1>
           </div>
         </div>
@@ -71,8 +74,8 @@
         <div class="col-md-6" data-aos="fade-up">
           <h4>01</h4>
           <h1 class="size-50">
-            Know <br />
-            About me
+            زیبا کاسبی <br />
+            <!-- درباره من -->
           </h1>
           <div class="h-50"></div>
           <p>
@@ -115,10 +118,8 @@
       <div class="container">
         <div class="col-md-12">
           <h4>02</h4>
-          <h1 class="size-50">
-            My <br />
-            Experience
-          </h1>
+          <h1 class="size-50">نوبت ها</h1>
+          <h3>برای رزرو وقت روز مورد نظر را انتخاب کنید</h3>
           <div class="h-50"></div>
         </div>
         <div class="col-md-12">
@@ -126,14 +127,69 @@
             <li class="timeline-event" data-aos="fade-up">
               <label class="timeline-event-icon"></label>
               <div class="timeline-event-copy">
-                <p class="timeline-event-thumbnail">April 2016 - Present</p>
-                <h3>Geil,Danke! GmbH</h3>
-                <h4>eines Web-Studios</h4>
-                <p>
-                  <strong>Projektmanagement mit Scrum</strong> <br />Ständiges
-                  Verbessern des agilen Entwicklungsprozesses beispielsweise
-                  durch Grunt, Yeoman, GIT, JIRA und BrowserStack.
-                </p>
+                <p class="timeline-event-thumbnail">یکم تا هفتم آبان</p>
+                <div class="week">
+                  <div class="day">
+                    <span class="title">۱ آبان</span>
+                    <div class="times">
+                      <div class="time active">9:00 - 11:00</div>
+                      <div class="time active">13:00 - 15:00</div>
+                      <div class="time de-active">15:30 - 17:30</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <span class="title">۲ آبان</span>
+                    <div class="times">
+                      <div class="time active">9:00 - 11:00</div>
+                      <div class="time active">13:00 - 15:00</div>
+                      <div class="time de-active">15:30 - 17:30</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <span class="title">۳ آبان</span>
+                    <div class="times">
+                      <div class="time de-active">9:00 - 11:00</div>
+                      <div class="time de-active">13:00 - 15:00</div>
+                      <div class="time de-active">15:30 - 17:30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="week">
+                  <div class="day">
+                    <span class="title">۴ آبان</span>
+                    <div class="times">
+                      <div class="time active">9:00 - 11:00</div>
+                      <div class="time active">13:00 - 15:00</div>
+                      <div class="time de-active">15:30 - 17:30</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <span class="title">۵ آبان</span>
+                    <div class="times">
+                      <div class="time active">9:00 - 11:00</div>
+                      <div class="time active">13:00 - 15:00</div>
+                      <div class="time de-active">15:30 - 17:30</div>
+                    </div>
+                  </div>
+                  <div class="day">
+                    <span class="title">۶ آبان</span>
+                    <div class="times">
+                      <div class="time active">9:00 - 11:00</div>
+                      <div class="time active">13:00 - 15:00</div>
+                      <div class="time de-active">15:30 - 17:30</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="week last">
+                  <div class="day">
+                    <span class="title">۷ آبان</span>
+                    <div class="times">
+                      <div class="time active">9:00 - 11:00</div>
+                      <div class="time active">13:00 - 15:00</div>
+                      <div class="time de-active">15:30 - 17:30</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </li>
             <li class="timeline-event" data-aos="fade-up" data-aos-delay=".2">
@@ -177,10 +233,7 @@
       <div class="container">
         <div class="col-md-12">
           <h4>03</h4>
-          <h1 class="size-50">
-            My <br />
-            Projects
-          </h1>
+          <h1 class="size-50">نمونه کارها</h1>
         </div>
         <!-- main container -->
         <div class="main-container portfolio-inner clearfix">
@@ -191,14 +244,12 @@
               <div class="categories-grid wow fadeInLeft">
                 <nav class="categories">
                   <ul class="portfolio_filter">
-                    <li><a href="" class="active" data-filter="*">All</a></li>
-                    <li>
-                      <a href="" data-filter=".photography">Photography</a>
-                    </li>
-                    <li><a href="" data-filter=".logo">Logo</a></li>
-                    <li><a href="" data-filter=".graphics">Graphics</a></li>
-                    <li><a href="" data-filter=".ads">Advertising</a></li>
-                    <li><a href="" data-filter=".fashion">Fashion</a></li>
+                    <li><a href="" data-filter=".logo">عروس</a></li>
+                    <li><a href="" data-filter=".ads">تبلیغاتی</a></li>
+                    <li><a href="" data-filter=".fashion">طبیعت</a></li>
+                    <li><a href="" data-filter=".graphics">اسپورت</a></li>
+                    <li><a href="" data-filter=".photography">کودک</a></li>
+                    <li><a href="" class="active" data-filter="*">همه</a></li>
                   </ul>
                 </nav>
               </div>
@@ -213,15 +264,15 @@
                 <div class="col-md-4 col-sm-6 fashion logo">
                   <a id="demo01" href="#animatedModal" class="portfolio_item">
                     <img
-                      src="img/portfolio/01.jpg"
+                      src="img/portfolio/1.jpeg"
                       alt="image"
                       class="img-responsive"
                     />
                     <div class="portfolio_item_hover">
                       <div class="portfolio-border clearfix">
                         <div class="item_info">
-                          <span>Mockups in seconds</span>
-                          <em>Fashion / Logo</em>
+                          <span>Mockseconds</span>
+                          <em>کودک</em>
                         </div>
                       </div>
                     </div>
@@ -233,7 +284,7 @@
                 <div class="col-md-4 col-sm-6 ads graphics">
                   <a id="demo02" href="#animatedModal" class="portfolio_item">
                     <img
-                      src="img/portfolio/03.jpg"
+                      src="img/portfolio/2.jpeg"
                       alt="image"
                       class="img-responsive"
                     />
@@ -252,7 +303,7 @@
                 <div class="col-md-4 col-sm-6 photography">
                   <a id="demo03" href="#animatedModal" class="portfolio_item">
                     <img
-                      src="img/portfolio/02.jpg"
+                      src="img/portfolio/4.jpeg"
                       alt="image"
                       class="img-responsive"
                     />
@@ -272,7 +323,7 @@
                 <div class="col-md-4 col-sm-6 fashion ads">
                   <a id="demo04" href="#animatedModal" class="portfolio_item">
                     <img
-                      src="img/portfolio/04.jpg"
+                      src="img/portfolio/5.jpeg"
                       alt="image"
                       class="img-responsive"
                     />
@@ -291,7 +342,7 @@
                 <div class="col-md-4 col-sm-6 graphics ads">
                   <a id="demo05" href="#animatedModal" class="portfolio_item">
                     <img
-                      src="img/portfolio/05.jpg"
+                      src="img/portfolio/6.jpeg"
                       alt="image"
                       class="img-responsive"
                     />
@@ -310,7 +361,7 @@
                 <div class="col-md-4 col-sm-6 photography">
                   <a id="demo06" href="#animatedModal" class="portfolio_item">
                     <img
-                      src="img/portfolio/010.jpg"
+                      src="img/portfolio/7.jpeg"
                       alt="image"
                       class="img-responsive"
                     />
@@ -330,7 +381,7 @@
                 <div class="col-md-4 col-sm-6 graphics ads">
                   <a id="demo07" href="#animatedModal" class="portfolio_item">
                     <img
-                      src="img/portfolio/06.jpg"
+                      src="img/portfolio/8.jpeg"
                       alt="image"
                       class="img-responsive"
                     />
@@ -349,7 +400,7 @@
                 <div class="col-md-4 col-sm-6 graphics ads">
                   <a id="demo08" href="#animatedModal" class="portfolio_item">
                     <img
-                      src="img/portfolio/07.jpg"
+                      src="img/portfolio/9.jpeg"
                       alt="image"
                       class="img-responsive"
                     />
@@ -368,7 +419,291 @@
                 <div class="col-md-4 col-sm-6 graphics ads">
                   <a id="demo09" href="#animatedModal" class="portfolio_item">
                     <img
-                      src="img/portfolio/08.jpg"
+                      src="img/portfolio/10.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/11.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/12.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/13.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/14.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/15.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/16.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/17.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/18.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/19.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/20.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/21.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/22.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/23.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/24.jpeg"
+                      alt="image"
+                      class="img-responsive"
+                    />
+                    <div class="portfolio_item_hover">
+                      <div class="portfolio-border clearfix">
+                        <div class="item_info">
+                          <span>Mobile devices</span> <em>Graphics / Ads</em>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <!-- end single work -->
+
+                <!-- single work -->
+                <div class="col-md-4 col-sm-6 graphics ads">
+                  <a id="demo09" href="#animatedModal" class="portfolio_item">
+                    <img
+                      src="img/portfolio/25.jpeg"
                       alt="image"
                       class="img-responsive"
                     />
@@ -399,19 +734,15 @@
       <div class="container">
         <div class="col-md-12">
           <h4>04</h4>
-          <h1 class="size-50">Contact Me</h1>
+          <h1 class="size-50">تماس با ما</h1>
           <div class="h-50"></div>
         </div>
         <div class="col-md-4" data-aos="fade-up">
-          <h3>Phone Number</h3>
-          <p>+20 5555 569 42</p>
-          <h3>Mobile Numberr</h3>
-          <p>+20 5555 569 42</p>
-          <h3>Email</h3>
-          <p>mail@info.me</p>
-
-          <h3>Social Network</h3>
-
+          <h3>موبایل</h3>
+          <p>+ 98 917 867 9741</p>
+          <h3>پست الکترونیکی</h3>
+          <p>ziba.kasebi@gmail.com</p>
+          <h3>شبکه های اجتماعی</h3>
           <ul class="social">
             <li>
               <a href="#"><i class="ion-social-facebook"></i></a>

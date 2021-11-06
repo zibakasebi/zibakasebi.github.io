@@ -77,6 +77,11 @@ body {
     line-height: 50px
 }
 
+.size-30 {
+    font-size: 30px;
+    line-height: 30px
+}
+
 .h-50 {
     height: 50px;
 }
@@ -280,7 +285,7 @@ a.active {
 ==================================================*/
 
 #home {
-    background: url(../img/home-bg-3.jpg);
+    background: url(../img/portfolio/18.jpeg);
     background-size: cover;
     height: 100vh;
 }
@@ -855,5 +860,8 @@ fieldset {
 .timeline .week.last .day{
     width: calc(33% - 5px);
     flex-grow: 0;
+}
+
+label.error{
 
 }

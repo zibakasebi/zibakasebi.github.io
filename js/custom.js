@@ -104,13 +104,76 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
+    // $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
 
     // Contact Form 	
 
     // validate contact form
     $(function () {
         $('#contact-form').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: {
+                    required: false
+                },
+                message: {
+                    required: true
+                }
+
+            },
+            messages: {
+                name: {
+                    required: "نام را وارد کنید",
+                    minlength: "نام حداقل باید ۲ کاراکتر باشد"
+                },
+                message: {
+                    required: "پیام را وارد کنید"
+                }
+            },
+            submitHandler: function (form) {
+
+                // var name = $("#feedback_name").val();
+                // var email = $("#feedback_email").val();
+                // var phone = $("#feedback_phone").val();
+                // var message = $("#feedback_message").val();
+                
+                // var feedbackRequest = {
+                //     name: name,
+                //     email: email,
+                //     phone: phone,
+                //     message: message
+                // };
+
+                $(form).ajaxSubmit({
+                    type: "POST",
+                    // data: $(form).serialize(),
+                    dataType: "json",
+                    url: "https://optimistic-mcclintock-e24199.netlify.app/.netlify/functions/feedback",
+                    success: function () {
+                        $('#contact :input').attr('disabled', 'disabled');
+                        $('#contact').fadeTo("slow", 1, function () {
+                            $(this).find(':input').attr('disabled', 'disabled');
+                            $(this).find('label').css('cursor', 'default');
+                            $('#success').fadeIn();
+                        });
+                    },
+                    error: function () {
+                        $('#contact').fadeTo("slow", 1, function () {
+                            $('#error').fadeIn();
+                        });
+                    }
+                });
+            }
+        });
+
+    });
+
+    // validate nobat form
+    $(function () {
+        $('#nobat-form').validate({
             rules: {
                 name: {
                     required: true,
@@ -145,15 +208,15 @@ $(document).ready(function () {
                     data: $(form).serialize(),
                     url: "process.php",
                     success: function () {
-                        $('#contact :input').attr('disabled', 'disabled');
-                        $('#contact').fadeTo("slow", 1, function () {
+                        $('#nobat :input').attr('disabled', 'disabled');
+                        $('#nobat').fadeTo("slow", 1, function () {
                             $(this).find(':input').attr('disabled', 'disabled');
                             $(this).find('label').css('cursor', 'default');
                             $('#success').fadeIn();
                         });
                     },
                     error: function () {
-                        $('#contact').fadeTo("slow", 1, function () {
+                        $('#nobat').fadeTo("slow", 1, function () {
                             $('#error').fadeIn();
                         });
                     }
@@ -162,4 +225,9 @@ $(document).ready(function () {
         });
 
     });
+
+
 });
+
+
+

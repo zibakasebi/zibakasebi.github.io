@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="ionicons/css/ionicons.min.css" rel="stylesheet" />
+    <link href="css/animate.min.css" rel="stylesheet" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <!-- main style -->
+    <link href="css/fonts.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body dir="rtl">
+    <!-- Preloader -->
+    <!-- <div id="preloader">
+      <div id="status">
+        <div
+          class="preloader"
+          aria-busy="true"
+          aria-label="Loading, please wait."
+          role="progressbar"
+        ></div>
+      </div>
+    </div> -->
+    <!-- ./Preloader -->
+
+    <!-- header -->
+    <header class="navbar-fixed-top">
+      <nav>
+        <ul>
+          <li><a href="index.html#about"> درباره من</a></li>
+          <li><a href="index.html#experience">رزرو وقت</a></li>
+          <li><a href="index.html#projects">نمونه کار</a></li>
+          <li><a href="index.html#contact">تماس با من</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ./header -->
+
+    <!-- nobat -->
+    <div class="section" id="nobat">
+      <div class="container">
+        <div class="col-md-12">
+          <h1 class="size-50">ثبت نوبت</h1>
+          <h۳ class="size-30">مشخصات خود را با دقت وارد کنید</h۳>
+          <div class="h-50"></div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <h4>تاریخ و ساعت</h4>
+          <span>
+            <h3>۴ آذر</h3>
+            <h5>ساعت ۱۲:۰۰ تا ۱۴:۰۰</h5>
+          </span>
+          <span>
+            <i class="ion-flash"></i>
+            <a href="index.html#experience">تغییر نوبت</a>
+          </span>
+        </div>
+        <div class="col-md-8" data-aos="fade-up">
+          <form
+            class="nobat-bg"
+            id="nobat-form"
+            name="nobat"
+            method="post"
+            novalidate="novalidate"
+          >
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              oninvalid="this.setCustomValidity('Enter User Name Here')"
+              placeholder="نام کامل"
+            />
+            <input
+              type="text"
+              name="phone"
+              class="form-control"
+              placeholder="شماره تماس"
+            />
+            <textarea
+              name="message"
+              class="form-control"
+              placeholder="توضیحات"
+              style="height: 120px"
+            ></textarea>
+            <button
+              id="submit"
+              type="submit"
+              name="submit"
+              class="btn btn-glance"
+            >
+              ثبت نوبت
+            </button>
+            <div id="success">
+              <p class="green textcenter">
+                Your message was sent successfully! I will be in touch as soon
+                as I can.
+              </p>
+            </div>
+            <div id="error">
+              <p>
+                Something went wrong, try refreshing and submitting the form
+                again.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- ./nobat -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!--  plugins  -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+
+    <!--  main script  -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
